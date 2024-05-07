@@ -18,6 +18,7 @@ import IC_SEARCH from "../res/ic-search.png"
 import IC_SELLER_BLUE from "../res/ic-seller-blue.png"
 import IC_SELLER_WHITE from "../res/ic-seller-white.png"
 import IMG_BRAND_LOGO from "../res/img-brand-logo.png"
+import IMG_PROFILE_PIC from "../res/img-profile-pic.png"
 
 export const R = {
    ic_add: IC_ADD,
@@ -39,5 +40,6 @@ export const R = {
    ic_search: IC_SEARCH,
    ic_seller_blue: IC_SELLER_BLUE,
    ic_seller_white: IC_SELLER_WHITE,
-   img_brand_logo: IMG_BRAND_LOGO
+   img_brand_logo: IMG_BRAND_LOGO,
+   img_profile_pic: IMG_PROFILE_PIC
 }
