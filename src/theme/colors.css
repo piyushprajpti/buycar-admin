@@ -1,8 +1,13 @@
 :root {
+   --primary-blue: #4462de;
    --background-main-gray: #f5f6fa;
    --white: #ffffff;
    --notification-back-red: #f93c65;
    --profile-back-gray: #d8d8d8;
    --text-dark-gray: #404040;
    --text-light-gray: #565656;
+   --icon-back-gray: #4E6CE833;
+   --sidebar-text-gray: #656565;
+   --divider-gray: #e0e0e0;
+   --logout-back-red: #DF29351C;
 }

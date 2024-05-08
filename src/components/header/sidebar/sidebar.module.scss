@@ -1,0 +1,84 @@
+.container {
+   flex: 2.2;
+   display: flex;
+   flex-direction: column;
+   padding: 10px 0;
+   background-color: var(--white);
+   height: calc(100vh - 70px);
+}
+
+.horizontal-divider {
+   width: 100%;
+   height: 0.6px;
+   background-color: var(--divider-gray);
+   margin: 5px 0;
+}
+
+.logout-wrapper {
+   margin-top: 15px;
+   display: flex;
+   padding: 12px 0 12px 43px;
+   align-items: center;
+}
+
+.logout-wrapper:hover {
+   cursor: pointer;
+}
+
+.logout-icon {
+   width: 32px;
+   padding: 7px;
+   border-radius: 50%;
+   background-color: var(--logout-back-red);
+}
+
+.logout-text {
+   font-size: 1rem;
+   font-weight: 400;
+   color: var(--sidebar-text-gray);
+   margin-left: 12px;
+}
+
+// button style
+
+.button-container {
+   width: 100%;
+   display: flex;
+   margin-bottom: 16px;
+   text-decoration: none;
+}
+
+.vertical-bar {
+   height: auto;
+   width: 6px;
+   border-radius: 0 8px 8px 0;
+   margin-right: 25px;
+}
+
+.button-wrapper {
+   padding: 12px 0 12px 12px;
+   display: flex;
+   width: 100%;
+   border-radius: 8px;
+   align-items: center;
+}
+
+.icon-box {
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.icon-img {
+   width: 18px;
+   object-fit: contain;
+}
+
+.button-name {
+   margin-left: 12px;
+   font-size: 1rem;
+   font-weight: 500;
+}
