@@ -19,6 +19,14 @@ import IC_SELLER_BLUE from "../res/ic-seller-blue.png"
 import IC_SELLER_WHITE from "../res/ic-seller-white.png"
 import IMG_BRAND_LOGO from "../res/img-brand-logo.png"
 import IMG_PROFILE_PIC from "../res/img-profile-pic.png"
+import IC_INCREASE from "../res/ic-increase.png"
+import IC_DECREASE from "../res/ic-decrease.png"
+import IC_TOTAL_VISITOR from "../res/ic-total-visitor.png"
+import IC_TOTAL_BUYER from "../res/ic-total-buyer.png"
+import IC_TOTAL_SELLER from "../res/ic-total-seller.png"
+import IC_TOTAL_PENDING from "../res/ic-total-pending.png"
+import IC_ADD_WHITE from "../res/ic-add-white.png"
+import IC_BACK_ARROW from "../res/ic-back-arrow.png"
 
 export const R = {
    ic_add: IC_ADD,
@@ -41,5 +49,13 @@ export const R = {
    ic_seller_blue: IC_SELLER_BLUE,
    ic_seller_white: IC_SELLER_WHITE,
    img_brand_logo: IMG_BRAND_LOGO,
-   img_profile_pic: IMG_PROFILE_PIC
+   img_profile_pic: IMG_PROFILE_PIC,
+   ic_increase: IC_INCREASE,
+   ic_decrease: IC_DECREASE,
+   ic_total_visitor: IC_TOTAL_VISITOR,
+   ic_total_buyer: IC_TOTAL_BUYER,
+   ic_total_seller: IC_TOTAL_SELLER,
+   ic_total_pending: IC_TOTAL_PENDING,
+   ic_add_white: IC_ADD_WHITE,
+   ic_back_arrow: IC_BACK_ARROW
 }

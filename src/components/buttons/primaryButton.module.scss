@@ -1,0 +1,21 @@
+.container {
+   display: flex;
+   border-radius: 6px;
+   align-items: center;
+   width: max-content;
+}
+
+.container:hover {
+   cursor: pointer;
+}
+
+.leading-icon {
+   width: 16px;
+   object-fit: contain;
+   margin-right: 10px;
+}
+
+.button-name {
+   font-weight: 500;
+   color: var(--white);
+}

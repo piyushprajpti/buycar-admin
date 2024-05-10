@@ -1,0 +1,24 @@
+.price-range-amount {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 16px 0;
+}
+
+.price {
+   font-size: 1rem;
+   font-weight: 500;
+   color: var(--filter-header);
+}
+
+.min-max-label-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.min-max-label {
+   font-size: 0.875rem;
+   color: var(--light-gray);
+   font-weight: 500;
+}

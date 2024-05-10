@@ -1,0 +1,31 @@
+.container {
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+}
+
+.filters-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px 0;
+} 
+
+.filters-wrapper {
+   display: flex;
+   column-gap: 8px;
+}
+
+.selectable-button-container-style {
+   padding: 8px 16px;
+}
+
+.action-buttons-wrapper {
+   display: flex;
+   column-gap: 12px;
+}
+
+.excel-button-container-style {
+   padding: 6px 14px;
+   background-color: var(--excel-green);
+}

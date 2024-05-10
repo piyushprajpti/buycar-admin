@@ -1,0 +1,120 @@
+import React from 'react'
+import style from "./editCarDetails.module.scss"
+import ImageCard from '../add-new-car/components/image-card/ImageCard'
+import PrimaryHeading from '../../components/primary-heading/PrimaryHeading'
+import PrimaryButton from '../../components/buttons/PrimaryButton'
+import { R } from '../../constants/resources'
+import SelectableButton from '../../components/buttons/SelectableButton'
+import InputField from '../../components/input-field/InputField'
+import BackButton from '../../components/buttons/BackButton'
+
+export default function EditCarDetails() {
+   return (
+      <div className={style["container"]}>
+
+         <div className={style["header-wrapper"]}>
+            <BackButton onClick={"/car-management"} />
+            <PrimaryHeading title={"Edit Car Details"} fontSize={"1.75rem"} fontWeight={600} />
+         </div>
+
+         <div className={style["wrapper"]}>
+
+            <div className={style["vehicle-details-container"]}>
+
+               <PrimaryHeading title={"Vehicle Details"} fontSize={"1.5rem"} fontWeight={500} />
+
+               <div className={style["two-tabs-section"]}>
+                  <InputField placeholder={"Vehicle Number"} />
+                  <SelectableButton
+                     options={["Select Make", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+               </div>
+
+               <div className={style["two-tabs-section"]}>
+                  <SelectableButton
+                     options={["Select Model", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+                  <SelectableButton
+                     options={["Select Variant", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+               </div>
+
+               <div className={style["two-tabs-section"]}>
+                  <SelectableButton
+                     options={["Select Fuel Type", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+                  <SelectableButton
+                     options={["Select Transmission", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+               </div>
+
+               <div className={style["two-tabs-section"]}>
+                  <InputField placeholder={"Enter KM Driven"} />
+                  <InputField placeholder={"Enter Price"} />
+               </div>
+
+               <div className={style["two-tabs-section"]}>
+                  <InputField placeholder={"Enter Discount %"} />
+                  <InputField placeholder={"Enter Selling Price"} />
+               </div>
+
+               <div className={style["two-tabs-section"]}>
+                  <SelectableButton
+                     options={["Select Flag", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+                  <SelectableButton
+                     options={["Select Status", 2024, 2023, 2022, 2021, 2020]}
+                     trailingIcon={R.ic_arrow_down_blue}
+                     containerStyle={style["selectable-button-container-style"]}
+                  />
+               </div>
+
+               <PrimaryButton
+                  name={"Save"}
+                  fontSize={"1.5rem"}
+                  containerStyle={style["primary-button-container-style"]}
+               />
+
+            </div>
+
+            <div className={style["vehicle-images-container"]}>
+
+               <PrimaryHeading title={"Upload Vehicle Images"} fontSize={"1.5rem"} fontWeight={500} />
+
+               <div className={style["images-wrapper"]}>
+                  <ImageCard text={"Upload Front View"} />
+                  <ImageCard text={"Upload Front Diagonal View - LHS"} />
+                  <ImageCard text={"Upload Back Diagonal View - LHS"} />
+                  <ImageCard text={"Upload Back View"} />
+                  <ImageCard text={"Upload BacFront Diagonal View - RHS"} />
+                  <ImageCard text={"Upload Back Diagonal View - RHS"} />
+                  <ImageCard text={"Upload Inside View - Dashboard"} />
+                  <ImageCard text={"Upload Inside View - Speedometer"} />
+                  <ImageCard text={"Upload Inside View - Gear Console"} />
+                  <ImageCard text={"Upload Inside View"} />
+                  <ImageCard text={"Upload Boot View"} />
+                  <ImageCard text={"Upload Spare Wheel"} />
+                  <ImageCard text={"Upload Engine Compartment"} />
+                  <ImageCard text={"Upload More Images"} />
+               </div>
+
+
+            </div>
+
+         </div>
+
+      </div>
+   )
+}

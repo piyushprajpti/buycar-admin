@@ -1,0 +1,63 @@
+::-webkit-file-upload-button {
+   display: none;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   border: 1px dashed var(--primary-blue);
+   aspect-ratio: 1;
+   background-color: var(--image-card-back);
+   border-radius: 8px;
+   color: transparent;
+   flex: 0 0 30%;
+}
+
+.input-tag {
+   display: none;
+}
+
+.preview-wrapper {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+}
+
+.preview-image {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.delete-icon {
+   position: absolute;
+   top: -12px;
+   right: -12px;
+}
+
+.delete-icon:hover {
+   cursor: pointer;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   flex: 1;
+}
+
+.add-icon {
+   width: 25px;
+   object-fit: contain;
+}
+
+.text {
+   font-size: 0.75rem;
+   color: var(--image-card-text);
+   font-weight: 400;
+   text-align: center;
+}

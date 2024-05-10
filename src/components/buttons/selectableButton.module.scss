@@ -1,0 +1,31 @@
+.container {
+   display: flex;
+   background-color: var(--white);
+   border: 1px solid var(--border-gray);
+   border-radius: 8px;
+   align-items: center;
+}
+
+.select-tag {
+   width: 100%;
+   outline: none;
+   border: none;
+   appearance: none;
+   background-color: transparent;
+   color: var(--table-header-black);
+}
+
+.down-arrow-box {
+   margin-left: 15px;
+   width: 15px;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.drop-down-icon {
+   width: 12px;
+   height: 7px;
+
+}

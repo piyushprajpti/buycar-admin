@@ -1,11 +1,47 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from "./sidebar.module.scss"
-import { Link } from 'react-router-dom'
-import { R } from '../../../constants/resources'
+import { Link, useLocation } from 'react-router-dom'
+import { R } from '../../constants/resources'
 
 export default function Sidebar() {
 
    const [activeButton, setActiveButton] = useState(1)
+   const location = useLocation();
+
+   useEffect(() => {
+
+      const pathname = location.pathname;
+
+      switch (pathname) {
+         case "/dashboard":
+            setActiveButton(1);
+            break;
+
+         case "/car-management":
+            setActiveButton(2);
+            break;
+
+         case "/buyer-lead-management":
+            setActiveButton(3);
+            break;
+
+         case "/seller-lead-management":
+            setActiveButton(4);
+            break;
+
+         case "/add-new-car":
+            setActiveButton(2);
+            break;
+
+         case "/edit-car-details":
+            setActiveButton(2);
+            break;
+
+         default:
+            setActiveButton(1);
+      }
+
+   }, [location])
 
    const dashboardIcon = (activeButton === 1) ? R.ic_dashboard_white : R.ic_dashboard_blue;
    const carManagementIcon = (activeButton === 2) ? R.ic_car_white : R.ic_car_blue;
@@ -68,7 +104,7 @@ const Button = ({ isActive, buttonName, onClick, targetPage, icon }) => {
       <Link className={style["button-container"]} onClick={() => onClick()} to={targetPage}>
          <p className={style["vertical-bar"]} style={{ backgroundColor: backColor }} />
 
-         <div className={style["button-wrapper"]} style={{backgroundColor: backColor}}>
+         <div className={style["button-wrapper"]} style={{ backgroundColor: backColor }}>
 
             <div className={style["icon-box"]} style={{ backgroundColor: iconBackColor }}>
                <img src={icon} className={style["icon-img"]} />

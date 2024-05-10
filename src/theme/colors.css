@@ -6,8 +6,20 @@
    --profile-back-gray: #d8d8d8;
    --text-dark-gray: #404040;
    --text-light-gray: #565656;
-   --icon-back-gray: #4E6CE833;
+   --icon-back-gray: #4e6ce833;
    --sidebar-text-gray: #656565;
    --divider-gray: #e0e0e0;
-   --logout-back-red: #DF29351C;
+   --logout-back-red: #df29351c;
+   --increase-green: #00b69b;
+   --decrease-red: #f93c65;
+   --card-gray: #606060;
+   --heading-gray: #202224;
+   --table-header-black: #1e1e1e;
+   --table-header-back: #f1f4f9;
+   --excel-green: #00b00d;
+   --border-gray: #00070a33;
+   --box-shadow: #0000000d;
+   --light-gray: #a7a7a7;
+   --image-card-back: #4E6CE81A;
+   --image-card-text: #0B0B0B;
 }
