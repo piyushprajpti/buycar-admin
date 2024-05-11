@@ -5,6 +5,7 @@ import SearchBar from '../../components/search-bar/SearchBar'
 import SelectableButton from '../../components/buttons/SelectableButton'
 import { R } from '../../constants/resources'
 import PrimaryButton from '../../components/buttons/PrimaryButton'
+import SellerTable from './components/table/SellerTable'
 
 export default function SellerLead() {
    return (
@@ -31,6 +32,8 @@ export default function SellerLead() {
                />
             </div>
          </div>
+
+         <SellerTable />
       </div>
    )
 }

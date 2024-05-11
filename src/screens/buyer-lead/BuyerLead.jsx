@@ -6,6 +6,7 @@ import SelectableButton from '../../components/buttons/SelectableButton'
 import SearchBar from '../../components/search-bar/SearchBar'
 import PrimaryButton from '../../components/buttons/PrimaryButton'
 import { R } from '../../constants/resources'
+import BuyerTable from './components/table/BuyerTable'
 
 export default function BuyerLead() {
    return (
@@ -32,6 +33,8 @@ export default function BuyerLead() {
                />
             </div>
          </div>
+
+         <BuyerTable />
       </div>
    )
 }

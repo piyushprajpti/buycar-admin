@@ -27,6 +27,10 @@ import IC_TOTAL_SELLER from "../res/ic-total-seller.png"
 import IC_TOTAL_PENDING from "../res/ic-total-pending.png"
 import IC_ADD_WHITE from "../res/ic-add-white.png"
 import IC_BACK_ARROW from "../res/ic-back-arrow.png"
+import IC_EDIT_PEN_WHITE from "../res/ic-edit-pen-white.png"
+import IC_TRANSMISSION from "../res/ic-transmission.png"
+import IC_FUEL from "../res/ic-fuel.png"
+import IC_ODOMETER from "../res/ic-odometer.png"
 
 export const R = {
    ic_add: IC_ADD,
@@ -57,5 +61,9 @@ export const R = {
    ic_total_seller: IC_TOTAL_SELLER,
    ic_total_pending: IC_TOTAL_PENDING,
    ic_add_white: IC_ADD_WHITE,
-   ic_back_arrow: IC_BACK_ARROW
+   ic_back_arrow: IC_BACK_ARROW,
+   ic_edit_pen_white: IC_EDIT_PEN_WHITE,
+   ic_transmission: IC_TRANSMISSION,
+   ic_fuel: IC_FUEL,
+   ic_odometer: IC_ODOMETER
 }

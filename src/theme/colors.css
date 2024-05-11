@@ -20,6 +20,11 @@
    --border-gray: #00070a33;
    --box-shadow: #0000000d;
    --light-gray: #a7a7a7;
-   --image-card-back: #4E6CE81A;
-   --image-card-text: #0B0B0B;
+   --image-card-back: #4e6ce81a;
+   --image-card-text: #0b0b0b;
+   --car-detail-back: #0000004d;
+   --original-price: #656565;
+   --discount-tag-back: #078b34;
+   --dot-gray: #a9a9a9;
+   --vehicle-name: #051319;
 }

@@ -13,7 +13,7 @@ export default function EditCarDetails() {
       <div className={style["container"]}>
 
          <div className={style["header-wrapper"]}>
-            <BackButton onClick={"/car-management"} />
+            <BackButton linkTo={"/car-management"} />
             <PrimaryHeading title={"Edit Car Details"} fontSize={"1.75rem"} fontWeight={600} />
          </div>
 

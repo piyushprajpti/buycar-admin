@@ -1,0 +1,34 @@
+.vehicle-table-container {
+   padding: 30px;
+   border-radius: 12px;
+   box-shadow: 6px 4px 54px 0 #0000000D;
+   background-color: var(--white);
+   width: 100%;
+}
+
+.table-wrapper {
+   width: 100%;
+}
+
+.table-header-wrapper {
+   color: var(--table-header-black);
+   background-color: var(--table-header-back);
+   border-radius: 120px !important;
+   padding: 12px;
+}
+
+.table-header {
+   font-family: "Poppins";
+   font-size: 1rem;
+   font-weight: 400;
+   text-align: left;
+}
+
+.table-body {
+   color: var(--sidebar-text-gray);
+}
+
+.table-row {
+   font-size: 0.875rem;
+   color: var(--original-price);
+}

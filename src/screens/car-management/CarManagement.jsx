@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from "./carManagement.module.scss"
 import PrimaryHeading from "../../components/primary-heading/PrimaryHeading"
 import SearchBar from '../../components/search-bar/SearchBar'
 import SelectableButton from "../../components/buttons/SelectableButton"
 import { R } from '../../constants/resources'
 import PrimaryButton from "../../components/buttons/PrimaryButton"
+import CarDetails from './car-details/CarDetails'
+import DetailTable from '../../components/tables/DetailTable'
 
 export default function CarManagement() {
+
+   const [isDetailPageVisible, setIsDetailPageVisible] = useState(false)
+
    return (
       <div className={style["container"]}>
 
-            <PrimaryHeading title={"Car Management"} count={"250"} fontSize={"1.75rem"} fontWeight={600} />
+         {isDetailPageVisible && <CarDetails onClick={() => setIsDetailPageVisible(false)} />}
+
+         <PrimaryHeading title={"Car Management"} count={"250"} fontSize={"1.75rem"} fontWeight={600} />
 
          <div className={style["filters-container"]}>
             <div className={style["filters-wrapper"]}>
@@ -49,6 +56,7 @@ export default function CarManagement() {
                   leadingIcon={R.ic_add_white}
                   name={"Add New Car"}
                   fontSize={"1rem"}
+                  linkTo={"/add-new-car"}
                />
 
                <PrimaryButton
@@ -60,6 +68,8 @@ export default function CarManagement() {
 
             </div>
          </div>
+
+         <DetailTable />
       </div>
    )
 }

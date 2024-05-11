@@ -1,0 +1,38 @@
+.specs-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin: 20px 0 36px 0;
+}
+
+.spec-wrapper {
+   display: flex;
+}
+
+.spec-icon {
+   width: 22px;
+   object-fit: contain;
+
+   @media screen and (max-width: 1024px) {
+      width: 12px;
+   }
+}
+
+.spec-name {
+   margin-left: 10px;
+   font-size: 1.25rem;
+   font-weight: 400;
+   color: var(--table-header-black);
+
+   @media screen and (max-width: 1024px) {
+      font-size: 0.5rem;
+   }
+}
+
+.gray-dot {
+   margin: 0 10px;
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+   background-color: var(--dot-gray);
+}

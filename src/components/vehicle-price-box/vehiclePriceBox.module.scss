@@ -1,0 +1,41 @@
+.vehicle-price-container {
+   display: flex;
+   margin-bottom: 5px;
+   align-items: center;
+}
+
+.vehicle-original-price {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--original-price);
+
+   @media screen and (max-width: 1024px) {
+      font-size: 0.875rem;
+   }
+}
+
+.vehicle-discounted-price {
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--table-header-black);
+   margin: 0 8px;
+
+   @media screen and (max-width: 1024px) {
+      font-size: 0.875rem;
+      margin: 0 0 0 5px;
+   }
+}
+
+.green-discount-tag {
+   margin-left: 10px;
+   padding: 6px 13px;
+   font-weight: 600;
+   font-size: 1rem;
+   color: #ffffff;
+   background-color: var(--discount-tag-back);
+   border-radius: 2px;
+
+   @media screen and (max-width: 1024px) {
+      font-size: 0.625rem;
+   }
+}

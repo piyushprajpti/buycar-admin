@@ -1,0 +1,42 @@
+.container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: var(--car-detail-back);
+   display: flex;
+   justify-content: end;
+   transition: transform 1s ease-in-out;
+   transform: translateX(0);
+}
+
+.wrapper {
+   width: 60%;
+   background-color: var(--white);
+   padding: 25px;
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.heading-wrapper {
+   display: flex;
+   column-gap: 15px;
+   align-items: center;
+}
+
+.primary-button-container-style {
+   padding: 7px 26px;
+   background-color: var(--primary-blue);
+}
+
+.vehicle-name {
+   font-size: 2.25rem;
+   font-weight: 600;
+   color: var(--vehicle-name);
+   margin-top: 40px;
+}
