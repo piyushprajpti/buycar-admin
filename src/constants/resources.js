@@ -31,6 +31,10 @@ import IC_EDIT_PEN_WHITE from "../res/ic-edit-pen-white.png"
 import IC_TRANSMISSION from "../res/ic-transmission.png"
 import IC_FUEL from "../res/ic-fuel.png"
 import IC_ODOMETER from "../res/ic-odometer.png"
+import IMG_CAR1 from "../res/car1.png"
+import IMG_CAR2 from "../res/car2.png"
+import IMG_BACK_BUTTON from "../res/img-back-button.png"
+import IMG_FORWARD_BUTTON from "../res/img-forward-button.png"
 
 export const R = {
    ic_add: IC_ADD,
@@ -65,5 +69,9 @@ export const R = {
    ic_edit_pen_white: IC_EDIT_PEN_WHITE,
    ic_transmission: IC_TRANSMISSION,
    ic_fuel: IC_FUEL,
-   ic_odometer: IC_ODOMETER
+   ic_odometer: IC_ODOMETER,
+   img_car1: IMG_CAR1,
+   img_car2: IMG_CAR2,
+   img_back_button: IMG_BACK_BUTTON,
+   img_forward_button: IMG_FORWARD_BUTTON,
 }

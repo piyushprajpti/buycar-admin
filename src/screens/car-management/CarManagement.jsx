@@ -10,7 +10,7 @@ import DetailTable from '../../components/tables/DetailTable'
 
 export default function CarManagement() {
 
-   const [isDetailPageVisible, setIsDetailPageVisible] = useState(false)
+   const [isDetailPageVisible, setIsDetailPageVisible] = useState(true)
 
    return (
       <div className={style["container"]}>
